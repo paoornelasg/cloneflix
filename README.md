@@ -43,9 +43,9 @@ El proyecto se encuentra estructurado como se muestra a continuación:
 
 ---
 
-## 🔗 Documentación adicional
-- ✓ Instalación y uso: [Instalación](./Instalacion.md)
-- ✓ Código completo (HTML, CSS, JS): [Código](./Codigo.md)
+## 📝 Otra documentación...
+- ✓ Revisar cómo usarlo: [Instalación](./Instalacion.md)
+- ✓ Código completo: [Código](./Codigo.md)
 
 ---
 

@@ -32,7 +32,11 @@ CloneFlix usa la API pública de TVMaze y hace peticiones básicas:
 
 El enlace que es la base está definido en `js/app.js` en la constante `API`, así que para probear otra api solo se necesita cambiar esa parte.  
 
+Y listo, ya se puede utilizar el mini clon de Netflix :) 
+
 ---
 
-Y listo, ya se puede utilizar el mini clon de Netflix :) 
+## 📝 Otra documentación...
+- ✓ Regresar al README: [`README`](README.md)
+- ✓ Consultar el código: [`Código`](Codigo.md)
 
