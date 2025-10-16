@@ -38,5 +38,6 @@ Y listo, ya se puede utilizar el mini clon de Netflix :)
 
 ## 📝 Otra documentación...
 - ✓ Regresar al README: [`README`](README.md)
-- ✓ Consultar el código: [`Código`](Codigo.md)
+- ✓ Código inicial: [`Versión 1`](./Codigo.md)
+- ✓ Código actualizado: [`Versión 2`](./Codigo2.md)
 
