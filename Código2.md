@@ -1,3 +1,76 @@
+# 🧾 Código fuente utilizado
+
+> En las siguientes líneas de código se muestran las modificaciones correspondientes a la versión 2. En el HTML se observa la adición de un id para el header. En el caso del archivo JavaScript,  se añadieron nuevas funciones para mostrar el modal de las series/películas y mejorar el aspecto en el inicio de la página.
+
+---
+
+## `index.html` (HTML)
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>👾 CloneFlix 👾</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg border-bottom bg-black">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <b>Clone</b>Fix
+            </a>
+            <form id="searchForm" class="d-flex ms-auto">
+                <input id="searchInput" type="text" class="form-control me-2" placeholder="Busca tu movie...">
+                <button type="submit" class="btn btn-danger">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero bg-black">
+        <div class="container">
+            <h1 id="heroTitle" class="display-5 fw-bold"></h1>
+            <p id="heroDesc" class="lead col-lg-6"></p>
+            <button id="heroPlay" class="btn btn-danger btn-lg">
+                Ver ahora
+            </button>
+        </div>
+    </header>
+
+    <main id="rowsContainer" class="container my-4">
+    </main>
+
+    <footer class="footer-py-4 mt-5">
+        <div class="container small">
+            Hecho con ❤️ utilizando TVMaze
+        </div>
+    </footer>
+
+    <!-- Modal para el detalle de al película-->
+    <div id="detailModal" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-black text-light">
+                <div class="modal-header border-secondary">
+                    <h5 id="detailTitle" class="modal-title">Detail</h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div id="detailBody" class="modal-body">
+                    Cargando...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
+```
+---
+
+## `js/app.js` (JavaScript)
+```javascript
 // API a TVMaze
 const API = "https://api.tvmaze.com"
 
@@ -141,3 +214,11 @@ const openDetail = async (id) => {
 }
 
 init()
+```
+
+---
+
+## 📝 Otra documentación...
+- ✓ Regresar al README: [`README`](README.md)
+- ✓ Consultar cómo usarlo: [`Instalación`](Instalacion.md)
+- ✓ Código inicial: [`Versión 1`](./Codigo.md)

@@ -188,8 +188,9 @@ const fetchJSON = async (url) => {
 init()
 ```
 
---
+---
 
 ## 📝 Otra documentación...
 - ✓ Regresar al README: [`README`](README.md)
 - ✓ Consultar cómo usarlo: [`Instalación`](Instalacion.md)
+- ✓ Código actualizado: [`Versión 2`](./Codigo2.md)

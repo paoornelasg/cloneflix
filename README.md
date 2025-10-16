@@ -30,26 +30,30 @@ El proyecto se encuentra estructurado como se muestra a continuación:
 ```
 - `index.html`: esqueleto HTML; contiene el navbar de búsqueda, hero, contenedor de filas y modal de detalle. Realiza la carag de Bootstrap y enlaza los archivos de estilos y scripts para el uso de CSS y JS, respectivamente.
 - `css/app.css`: se usa un color base oscuro, con un efecto de degradado en el hero, carruseles horizontales con scroll-snap, y tarjetas tipo póster.
-- `js/app.js`: inicializa la app, hace `fetch` a TVMaze (`/shows?page=1`), y prepara `renderRow(...)` para construir secciones tipo “Tendencias”, mostrando las series y películas.
+- `js/app.js`: inicializa la app, hace `fetch` a TVMaze (`/shows?page=1`), y prepara `renderRow(...)` para construir secciones tipo “Tendencias”, mostrando las series y películas. Permite realizar búsquedas con `wireSearch(...)` y mostrar modales con los detalles de la serie/película de interés utilizando la función `openDetail(...)`.
 
 ---
 
 ## 👾 Aspectos relevantes del código
 - Usa `fetch` para traer datos de TVMaze (`/shows?page=1`).
 - Crea filas dinámicas con `renderRow()`.
+- Utiliza `posterCard()` para crear las tarjetas en el rail.
 - El hero se puede actualizar con un show aleatorio.
-- El modal permite mostrar detalles de las series y películas (tipo `Netflix`).
 - Todo el scroll horizontal se maneja con `scroll-snap`.
+- La búsqueda de series y películas se emplea a través de la función `wireSearch()` mapeando los datos obtenidos de la API y mostrando la fila dinámica. 
+- Realiza el manejo de caracteres a través de las funciones `escapeHTML()` y `stripHTML()`.
+- El modal permite mostrar detalles de las series y películas (tipo `Netflix`), mostrando la portada, título, género, descripción y status utiliando la función `openDetail()`.
 
 ---
 
 ## 📝 Otra documentación...
-- ✓ Revisar cómo usarlo: [Instalación](./Instalacion.md)
-- ✓ Código completo: [Código](./Codigo.md)
+- ✓ Revisar cómo usarlo: [`Instalación`](./Instalacion.md)
+- ✓ Código inicial: [`Versión 1`](./Codigo.md)
+- ✓ Código actualizado: [`Versión 2`](./Codigo2.md)
 
 ---
 
 ## 📝 Créditos
 - Proyecto hecho por Pao ❤️.
 - Datos de series obtenidos de TVMaze (uso educativo). 
-- Diseño base con Bootstrap 5.
+- Diseño con Bootstrap 5.
